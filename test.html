@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用操作</title>
+</head>
+<!--引入自定义插件-->
+<script src="lib/tyb.js" type="text/javascript"></script>
+<!--执行插件方法-->
+<script type="text/javascript">
+
+    // alert(tyb.add(6,9)) ;
+    //测试调用自定义插件的方法
+    function bro() {
+        document.getElementById('broType').value = tyb.getBro();
+    }
+    function clearCookie() {
+        tyb.clearCookie();
+    }
+
+
+</script>
+
+<body >
+<input type="text" id="broType" name="broType" style="width: 200px;">
+<input type="button" value="点击获取浏览器信息" onclick="bro();"></input>
+<h1>清除cookie的操作</h1>
+<input type="button" value="清除cookie" onclick="clearCookie();" />
+
+</body>
+</html>
